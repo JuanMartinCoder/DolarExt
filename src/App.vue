@@ -1,9 +1,15 @@
 <script setup>
   import { ref } from "vue";
   const dolares = ref(null)
-  fetch('https://dolarapi.com/v1/dolares')
-  .then(res => res.json())
-  .then(data => dolares.value = data)
+
+  function loadData() {
+    fetch('https://dolarapi.com/v1/dolares')
+    .then(res => res.json())
+    .then(data => dolares.value = data)
+  }
+  
+  
+  loadData()
 
 </script>
 
@@ -34,20 +40,21 @@
         justify-content: space-between;
     }
     .dolar {
-        width: 40%;
+        width: 45%;
         display: flex;
         flex-wrap: wrap;
         border-style: solid;
         border-width: 1px;
         border-radius: 10px;
         margin: 5px;
-
+        
     }
     .dolar_nombre{
         width: 100%;
         text-align: center;
         margin-bottom: 0;
         padding-bottom: 0;
+        font-weight: bold;
     }
     .compraventa{
         width: 100%;
