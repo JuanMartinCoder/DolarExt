@@ -7,8 +7,7 @@
     .then(res => res.json())
     .then(data => dolares.value = data)
   }
-  
-  
+    
   loadData()
 
 </script>
@@ -28,9 +27,8 @@
                 </div>
             </div>
         </div>
-      </div>
+    </div>
 </template>
-
 
 
 <style >
@@ -52,8 +50,6 @@
     .dolar_nombre{
         width: 100%;
         text-align: center;
-        margin-bottom: 0;
-        padding-bottom: 0;
         font-weight: bold;
     }
     .compraventa{
