@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Dolar",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Una extension del los dolares en Argentina",
     "icons": {
       "48": "icon.png"
